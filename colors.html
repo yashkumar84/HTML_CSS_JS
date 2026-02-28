@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+      }
+      .div {
+        height: 200px;
+        flex-basis: 200px;
+        color: rgb(75, 165, 42);
+        background-color: blue;
+        margin: 10px;
+        border: 20px solid saddlebrown;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+
+        height: 100vh;
+        align-items: center;
+      }
+      .div-4 {
+        flex-grow: 1;
+        flex-shrink: 2;
+      }
+    </style>
+    <title>Colors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div" id="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div div-4"></div>
+      <!-- <div class="div"></div> -->
+    </div>
+  </body>
+</html>
